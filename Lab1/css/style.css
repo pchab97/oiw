@@ -1,0 +1,55 @@
+html {
+    background-color: #abc;
+}
+
+.czerwony {
+    color: red;
+    margin-bottom: 30px;
+}
+
+.czcionka {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 5px 5px 10px orange;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    border-left: 20px solid red;
+    border-right: 20px solid red;
+    width: 100%-40px;
+}
+
+.marginesy {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.margines {
+    text-align: center;
+    padding: 35px;
+    border: solid 7px blue;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+
+.js {
+    text-align: center;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: red;
+}
