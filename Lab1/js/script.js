@@ -1,8 +1,7 @@
 document.querySelector('button').onclick = function () {
-    /*if (document.querySelector('tekst') === "Tekst 1") {
-        document.textContent('tekst') = 'Tekst 2';
+    if (document.getElementById('tekst').innerHTML === "Tekst 1") {
+        document.getElementById("tekst").innerHTML = 'Tekst 2';
     } else {
-        document.textContent('tekst') = 'Tekst 1';
-    }*/
-    alert("przycisk działa, ale co dalej?")
+        document.getElementById("tekst").innerHTML = 'Tekst 1';
+    }
 }
