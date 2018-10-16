@@ -2,12 +2,37 @@ html {
     background-color: #abc;
 }
 
-.czerwony {
+#zdj {
+    float: left;
+    padding: 20px;
+    border-right: 2px dotted #404040;
+}
+
+#imge {
+    width: 100px;
+    height: 100px;
+}
+
+#teksty {
+    float: left;
+    padding: 40px;
+    width: 80%;
+}
+
+#akapit {
+    padding: 30px;
+    background-color: #abe;
+    overflow: auto;
+    margin: 40px;
+
+}
+
+#czerwony {
     color: red;
     margin-bottom: 30px;
 }
 
-.czcionka {
+#czcionka {
     text-align: center;
     font-size: 60px;
     text-shadow: 5px 5px 10px orange;
@@ -23,12 +48,12 @@ h1 {
     width: 100%-40px;
 }
 
-.marginesy {
+#marginesy {
     max-width: 30%;
     max-height: 30%;
 }
 
-.margines {
+#margines {
     text-align: center;
     padding: 35px;
     border: solid 7px blue;
@@ -38,8 +63,39 @@ h1 {
     background-color: aquamarine;
 }
 
-.js {
+#js {
     text-align: center;
+    font-size: 35px;
+    border: solid 5px orange;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: yellow;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.przycisk1 {
+    font-size: 20px;
+    border: solid 2px darkorange;
+    background-color: orange;
+    padding: 6px;
+    border-radius: 12px;
+
+}
+
+.przycisk1:hover {
+    background-color: white;
+    border-color: solid 2px darkorange;
+    cursor: pointer;
+}
+
+.button1 {
+    margin: 0 auto;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    width: 45%;
 }
 
 a:link {

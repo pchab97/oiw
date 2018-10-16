@@ -5,14 +5,20 @@
   <meta charset="utf-8">
   <title>Pierwsza strona www</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
   <h1>To jest nagłówek strony</h1>
-  <img src="img/testowy.png" alt="My test image">
-  <p><strong>HTML</strong> (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej
-    zawartości. Na przykład treść może być uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub
-    tabel obrazów i danych. Jak sugeruje tytuł, ten artykuł daje podstawy do zrozumienia HTML i jego funkcji.</p>
+  <div id="akapit">
+    <div id="zdj"><img id="imge" src="img/testowy.png" alt="My test image"></div>
+    <div id="teksty"><strong>HTML</strong> (Hypertext Markup Language) jest to kod używany do tworzenia struktury
+      strony
+      i jej zawartości. Na przykład treść może być uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów
+      lub tabel obrazów i danych. Jak sugeruje tytuł, ten artykuł daje podstawy do zrozumienia HTML i jego funkcji.
+    </div>
+  </div>
+  <div style="clear:both"></div>
   <p>Tak działa punktowanie w HTML'u:</p>
   <ul>
     <li>podpunkt pierwszy</li>
@@ -22,22 +28,28 @@
 
 
   <p>To jest przykładowy link do strony zewnętrznej <a href="https://github.com/pchab97/oiw.git">MÓJ GITHUB</a></p>
-  <p class="czerwony">Tu tekst jest czerwony z pomocą CSS</p>
-  <p class="czcionka">Tu jest tekst z cieniem w CSS</p>
+  <p id="czerwony">Tu tekst jest czerwony z pomocą CSS</p>
+  <p id="czcionka">Tu jest tekst z cieniem w CSS</p>
 
   <p>Tak wyglądają marginesy:</p>
-  <img class="marginesy" src="img/marginesy.png">
+  <img id="marginesy" src="img/marginesy.png">
   <div>
-    <p class="margines">A tak to wygląda w praktyce:<br> margines (ogólnie) – przestrzeń pomiędzy główną zawartością
+    <p id="margines">A tak to wygląda w praktyce:<br> margines (ogólnie) – przestrzeń pomiędzy główną zawartością
       (np. grafiką lub fotografią), a
       brzegiem danej powierzchni (np. kartki papieru, płótna)</p>
   </div>
-  <div class="js">
+  <div id="js">
     <p>Tutaj korzystam z javascript.</p>
-    <p id="tekst">Tekst 1</p>
-    <button class="przycisk1">PRZYCISK</button>
+    <div class="button1">
+      <p id="tekst">Tekst 1</p>
+      <button class="przycisk1" onclick="but1()">PRZYCISK</button>
+    </div>
+    <div class="button1">
+      <p>A tutaj wyświetlam powiadomienia</p>
+      <button class="przycisk1" onclick="but2()">PRZYCISK</button>
+    </div>
   </div>
-  <script src="js/script.js"></script>
+  <div style="clear:both"></div>
 </body>
 
 </html>
