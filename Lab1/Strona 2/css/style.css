@@ -77,6 +77,10 @@ body {
     margin-top: 100px;
 }
 
+.social>* {
+    transition: .4s linear;
+}
+
 .fb {
     width: 25%;
     float: left;
