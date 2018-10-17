@@ -8,10 +8,11 @@ body {
     width: 100%;
 }
 
-.header {
+header {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -30,8 +31,11 @@ body {
     color: #C34F4F;
 }
 
-.nav {
-    margin-top: 35px;
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: #C34F4F;
     text-align: center;
@@ -142,4 +146,79 @@ a:hover {
 
 a:link {
     color: white;
+}
+
+/* TUTAJ SECOND.HTML */
+main {
+    /*margin-left: 50px;
+    margin-top: 50px;*/
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    box-sizing: border-box;
+
+}
+
+section {
+    float: left;
+    width: 80%;
+    margin-top: 50px;
+}
+
+aside {
+    width: 10%;
+    margin-top: 50px;
+    position: fixed;
+    right: 2%;
+    top: 25%;
+    margin-left: 2%;
+}
+
+#reklama {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.artykul {
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.akapit {
+    float: left;
+    width: 32%;
+    padding: 30px;
+    background-color: rgb(37, 117, 167);
+    height: 350px;
+    margin-left: 1%;
+    text-align: justify;
+
+}
+
+.headery {
+    background-color: #3095D3;
+    width: 22%;
+    padding: 30px;
+    float: left;
+    height: 350px;
+    text-align: center;
+}
+
+.cytat {
+    float: left;
+    background-color: #3095D3;
+    width: 22%;
+    padding: 30px;
+    height: 350px;
+    margin-left: 1%;
+    text-align: justify;
+
+}
+
+.podsumowanie {
+    margin-top: 20px;
+    background-color: #3095D3;
+    text-align: justify;
+    width: 89.5%;
+    padding: 30px;
 }
