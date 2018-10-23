@@ -48,6 +48,12 @@ nav {
     width: 17%;
     border-right: 2px dotted #751B1B;
     font-size: 20px;
+    border-top: 1px solid #751B1B;
+    border-bottom: 1px solid #751B1B;
+}
+
+.navi:first-child {
+    border-left: 2px dotted #751B1B;
 }
 
 .navi:hover {
@@ -212,7 +218,16 @@ aside {
     height: 350px;
     margin-left: 1%;
     text-align: justify;
+}
 
+.cytat:hover,
+.headery:hover,
+.akapit:hover,
+.podsumowanie:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    z-index: 100;
 }
 
 .podsumowanie {
