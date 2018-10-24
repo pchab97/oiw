@@ -135,7 +135,7 @@ nav {
     background-color: #3095D3;
 }
 
-.footer {
+footer {
     margin-top: 20px;
     padding-bottom: 15px;
     text-align: center;
@@ -236,4 +236,25 @@ aside {
     text-align: justify;
     width: 89.5%;
     padding: 30px;
+}
+
+.tabela {
+    color: black;
+    margin-top: 70px;
+    width: 70%;
+    margin-left: 5%;
+
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+.tabela tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tabela th {
+    color: white;
+    background-color: black;
 }
