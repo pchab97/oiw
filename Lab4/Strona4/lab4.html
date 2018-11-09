@@ -32,8 +32,10 @@
             <div class="odnmemory">
                 <a href="memory.html">ZAGRAJ W MEMORY!</a>
             </div>
-            <div id="czas">
-                Czas:
+            <div id="czas" style="text-align: center">
+                <h1>
+                    Czas:
+                </h1>
             </div>
             <div class="slider" style="margin-top: 50px">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -77,7 +79,19 @@
 
         function zegar() {
             const currentDate = new Date();
-            $('#czas').html('Czas: ' + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds());
+            var s = currentDate.getSeconds();
+            if (s < 10) {
+                s = "0" + s;
+            }
+            var m = currentDate.getMinutes();
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var h = currentDate.getHours();
+            if (h < 10) {
+                h = "0" + h;
+            }
+            $('#czas').html('<h1> Czas: ' + h + ":" + m + ":" + s + "</h1>");
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
