@@ -69,6 +69,16 @@
 
             </div>
             <script src="memory.js"></script>
+            <div id="ajax">
+                <script>
+                    x = new XMLHttpRequest();
+                    if (x.status == 200) {
+                        $('#ajax').html('<p> Działa</p>');
+                    } else {
+                        $('#ajax').html('<p> Nie działa</p>');
+                    }
+                </script>
+            </div>
         </main>
         <footer>
             To jest stopka. &copy; 2018 Wykonał: Przemysław Chabowski 165 IC B2
@@ -92,6 +102,18 @@
                 h = "0" + h;
             }
             $('#czas').html('<h1> Czas: ' + h + ":" + m + ":" + s + "</h1>");
+            setInterval("aaa(),1000");
+
+            function aaa() {
+                const x = new XMLHttpRequest();
+                if (x.status == 200) {
+                    $('#ajax').html('<p> Działa</p>');
+                    alert("działa")
+                } else {
+                    $('#ajax').html('<p> Nie działa</p>');
+                    alert("nie działa")
+                }
+            }
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
